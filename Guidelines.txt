@@ -1,0 +1,30 @@
+To check or search any control: (like Repo initialization or anything)
+
+    alt + z ====>>> for word wrap (Shortkey)
+    Go to setting -> Command Palette -> Search your requirement
+
+Initialization:
+    Group name: what name should be used to identify the identify (it should be like domain name -->> in.ratan.app or com.ratan.app) usually like reverse domain notation.
+
+    Artifact name : Name of the project (like name task like -- feedback-api {use hypen over here } )
+    
+    Together they define java package --- (example: in.ratan.feedback-api)
+
+Architecture:
+    Presentation layer(Controller) -->> First layer to interact with Client
+    Service Layer -->> Provides services to Controller
+    Dao/Repository Layer -->> Helps service layer to get data 
+    Database --> stores data 
+
+Add basic Dependencies in the pom.xml file (Project Object Model)
+    add basic first like WEB, POSTGRES DRIVER, Lombrok, ORM (Data JPA), Template Engine(Thymeleaf), Validator (Validation), Devtool driver. (Then keep adding as per requirements)
+
+To run the project see in src -->> main -->> file name `feedbackApiApplication.java` and run this file
+
+Now, the MVC i.e. Model view controller is made inside the `main` folder becoz we have main run folder inside this package
+
+All the configuration are done in src -->> main -->> resource -->> application.properties
+
+Step 1 : TO SETUP DATABASE in application.properties files.
+
+STEP 2: Make Controller
